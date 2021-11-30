@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Morse Code Translator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="panels">
+        <div class="panel"> 
+          <h3>Morse Code Translation</h3>
+          <h1>Translator</h1>
+          <textarea id="input" rows="4" placeholder="enter English">MORSECODE</textarea>
+          <div class="symbol">⇅</div>
+          <textarea id="output" rows="4" placeholder="enter Password"></textarea>
+          <div class="playlist"></div>
+          <div class="buttons">
+            <button class="purple" id="btnMorse">Translate to Morse Code</button>
+            <button class="yellow" id="btnEng">Translate Back</button>
+            <button class="white" id="btnPlay">Play</button>
+            <audio class="short" src="http://2017.awiclass.monoame.com/audio/morse/short.mp3"></audio>
+            <audio class="long" src="http://2017.awiclass.monoame.com/audio/morse/long.mp3"></audio>
+          </div>
+        </div>
+        <div class="panel yellow">
+          <h3>Playlist</h3>
+          <hr/>
+          <ul class="translist"></ul>
+        </div>
+      </div>
+      <div class="decoration">Morse<br>Code</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="index.js"></script>
+</html>
